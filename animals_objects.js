@@ -25,9 +25,8 @@ function prepareObjects(jsonData) {
     const obj = {};
     obj.fullList = jsonObject.fullname;
     obj.name = jsonObject.fullname.substring(0, jsonObject.fullname.indexOf(" "));
-    obj.type = jsonObject.fullname.substring(jsonObject.fullname.lastIndexOf(" "), jsonObject.fullname.lastIndexOf(""));
-    obj.desc = jsonObject.fullname.substring(jsonObject.fullname.indexOf(" ") + 4, jsonObject.fullname.lastIndexOf(" "));
-    //
+    obj.type = jsonObject.fullname.substring(jsonObject.fullname.lastIndexOf(" ") + 1, jsonObject.fullname.lastIndexOf(""));
+    obj.desc = jsonObject.fullname.substring(jsonObject.fullname.indexOf(" ") + 5, jsonObject.fullname.lastIndexOf(" "));
     obj.age = jsonObject.age;
     allAnimals.push(obj);
     // TODO: MISSING CODE HERE !!!
