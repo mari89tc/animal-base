@@ -38,7 +38,6 @@ function prepareObjects(jsonData) {
 function displayList() {
   // clear the list
   document.querySelector("#list tbody").innerHTML = "";
-
   // build a new list
   allAnimals.forEach(displayAnimal);
 }
