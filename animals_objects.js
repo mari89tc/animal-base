@@ -31,15 +31,14 @@ function prepareObjects(jsonData) {
     allAnimals.push(obj);
     // TODO: MISSING CODE HERE !!!
   });
-  console.log(allAnimals);
-  displayList();
+  displayList(allAnimals);
 }
 
-function displayList() {
+function displayList(animalDisplay) {
   // clear the list
   document.querySelector("#list tbody").innerHTML = "";
   // build a new list
-  allAnimals.forEach(displayAnimal);
+  animalDisplay.forEach(displayAnimal);
 }
 
 function displayAnimal(animal) {
